@@ -1,4 +1,6 @@
 sudo: required
+language: generic
+
 services:
  - docker
 
@@ -9,7 +11,7 @@ script:
  - docker run -e CI=true krs/docker-react npm run test
 
 deploy:
- -provider: elasticbeanstalk
+  provider: elasticbeanstalk
   region: "eu-north-1"
   app: "frontend"
   env: "frontend-env"
