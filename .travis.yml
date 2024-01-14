@@ -22,4 +22,4 @@ deploy:
   bucket_name: "elasticbeanstalk-eu-north-1-823689189933"
   bucket_path: "Frontend"
   on:
-    branch: main
+    branch: master
